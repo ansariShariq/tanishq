@@ -1,0 +1,262 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Style/cart.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <title> Tanisq-Online Gold & Diamond</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg3JKYABu3HIjCovwDtmuJrVHuJi1YJHgQA&usqp=CAU" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="nav">
+        <a>BRANDS</a>
+        <select class="navoption nav">
+            <option>CURRENCY SELECTOR</option>
+        </select>
+        <select class="navoption nav">
+            <option>GOLD RATE</option>
+        </select>
+        <a class="navRight1" href="login.html">LOGIN</a>
+        <a class="navRight">ENCIRCLE</a>
+        <a class="navRight">GOLDEN HARVEST</a>
+        <a class="navRight">BOOK AN APPOINTMENT</a>
+        <a class="navRight">WISHLIST</a>
+        <a class="navRight" href="Cart.html">CART(<a id="cartNo">0</a>)</a>
+    </div>
+    <div class="line"></div>
+    <div id="tanishqimg" onclick="home()">
+        <img
+            src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" />
+    </div>
+    <div>
+        <div class="wrapper">
+            <ul>
+                <li onclick="prod()">JEWELLERY
+
+                    <ul>
+                        <li onclick="prod()">ALL JEWELLERY</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">EARRINGS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">PENDANTS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">FINGER RINGS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">MANGLASUTRA</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">CHAIN</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">NECKLACE</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">NOSEPIN</li>
+                    </ul>
+                </li>
+                <li>GOLD
+                    <ul>
+                        <li onclick="prod()">MANGLASUTRA</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">EARRINGS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">PENDANTS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">FINGER RINGS</li>
+                    </ul>
+
+                </li>
+                <li>DIAMOND
+                    <ul>
+                        <li onclick="prod()">ENGAEMENT RINGS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">EARRINGS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">PENDANTS</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">FINGER RINGS</li>
+                    </ul>
+                </li>
+                <li>RING
+                    <ul>
+                        <li onclick="prod()">GOLD</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">PLATINUM</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">DIAMOND</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">BAND</li>
+                    </ul>
+                </li>
+                </li>
+                <li>DIGITAL GOLD</li>
+                <li>COLLECTIONS
+                    <ul>
+                        <li onclick="prod()">AVEER</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">PREEN</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">UTSAVA</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">GULNAZ</li>
+                    </ul>
+                </li>
+                </li>
+                <li>RIVAAH</li>
+                <li>MIA
+                    <ul>
+                        <li onclick="prod()">MIA GLAM</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">MIA FESTIVE</li>
+                    </ul>
+                    <ul>
+                        <li onclick="prod()">MIA EINGS</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div><img
+                src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/8db4d9e7-8a24-4486-a867-e507a3c3f6be/store-locataor.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8db4d9e7-8a24-4486-a867-e507a3c3f6be-m2i4h5c"
+                id="location" /></div>
+        <div><img
+                src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png"
+                id="srch" /></div>
+        
+
+        
+        <div class="bar">
+            <button id="homebar" onclick="home()">HOME</button>
+            <p>></p>
+            <button id="cartbar">CART</button>
+        </div>
+        <div>
+            <div class="cart-item">
+                <h1 id="cartword">
+                    CART:
+                    <span>ITEMS</span>
+                </h1>
+            </div>
+            <div class="Checkout">
+                <div class="orderbox">
+                    <h2>
+                        ORDER SUMMARY
+                    </h2>
+                </div>
+                <div class="link-box">
+                    <div>
+        
+                        <li class="promolink" id="enterpromo">ENTER VOUCHER CODE</li>
+                        <li class="promolink" id="viewpromo">VIEW PROMO CODE</li>
+        
+                    </div>
+                </div>
+                <div class="apply-box">
+                    <div>
+                        <input type="text" id="promoinput">
+                        <button type="submit" id="Applybutton">APPLY</button>
+                    </div>
+                </div>
+        
+                <div class="cart-summry">
+                    <div style=" float: left;">
+                        <div class="orderlefttext">
+                            <span>ORDER TOTAL (ITEMS)</span>
+                        </div>
+        
+                        <div class="item-price one-item-price">
+                            <span>
+                                <p class="total"> &#x20b9; 28557</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div style=" float: left; clear: both;">
+                        <div class="orderlefttext">
+                            <span>SHIPING</span>
+                        </div>
+        
+                        <div class="item-price ">
+                            <span>
+                                <p> FREE</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div style=" float: left; clear: both;">
+                        <div class="orderlefttext">
+                            <span>DISCOUNT</span>
+                        </div>
+        
+                        <div class="item-price discount">
+                            <span>
+                                <p> &#x20b9; 0</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div style=" float: left; clear: both;">
+                        <div class="orderlefttext">
+                            <span style="font-size: 25px; font-weight: 900;">YOU PAY</span>
+                        </div>
+        
+                        <div class="item-price total-price">
+                            <span>
+                                <p class="total-price"> &#x20b9; 0</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tax-div">
+                        <h4>INCLUSIVE OF ALL TAXES*</h4>
+                    </div>
+                    <div>
+                        <button onclick="checkout()" type="submit" class="checkout-btn">PROCEED TO CHECKOUT</button>
+                    </div>
+                    <div>
+                        <li onclick="prod()" id="shopping-link">CONTINUE SHOPPING</li>
+                    </div>
+                </div>
+            </div>
+            <div class="Product-box">
+                <div class="header-item">
+                    <div>
+                        <p>ITEM(S)</p>
+                    </div>
+                    <div class="quantity">
+                        <p >QUANTITY</p>
+                    </div>
+                    <div id="total-header">
+                        <p >TOTAL</p>
+                    </div>
+                </div>
+                <hr style="color:rgb(77, 77, 77);width: 100%; margin-top: 80px;">
+                <div class="product-details">
+                    <div>
+
+
+
+                        
+    
+<body>
+</html>
+
+<script src="../Script/cart.js"></script>

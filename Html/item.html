@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Tanisq-Online Gold & Diamond</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg3JKYABu3HIjCovwDtmuJrVHuJi1YJHgQA&usqp=CAU" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="../Style/item.css">
+
+<body>
+    <div class="nav">
+        <a>BRANDS</a>
+        <select class="navoption nav">
+            <option>CURRENCY SELECTOR</option>
+        </select>
+        <select class="navoption nav">
+            <option>GOLD RATE</option>
+        </select>
+        <a class="navRight1" onclick="land()">LOGIN</a>
+        <a class="navRight">ENCIRCLE</a>
+        <a class="navRight">GOLDEN HARVEST</a>
+        <a class="navRight">BOOK AN APPOINTMENT</a>
+        <a class="navRight">WISHLIST</a>
+        <a class="navRight" href="Cart.html">CART(<a id="cartNo">0</a>)</a>
+    </div>
+    <div class="line"></div>
+    <div style="width: 98%;margin: auto;">
+        <a href="index.html">
+            <div id="tanishqimg">
+                <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" />
+
+            </div>
+        </a>
+        <div>
+            <div class="wrapper">
+                <ul>
+                    <li>JEWELLERY
+
+                        <ul>
+                            <li onclick="prod()">>ALL JEWELLERY</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MANGLASUTRA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">CHAIN</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">NECKLACE</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">NOSEPIN</li>
+                        </ul>
+                    </li>
+                    <li>GOLD
+                        <ul>
+                            <li onclick="prod()">MANGLASUTRA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+
+                    </li>
+                    <li>DIAMOND
+                        <ul>
+                            <li onclick="prod()">ENGAEMENT RINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+                    </li>
+                    <li>RING
+                        <ul>
+                            <li onclick="prod()">GOLD</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PLATINUM</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">DIAMOND</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">BAND</li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>DIGITAL GOLD</li>
+                    <li>COLLECTIONS
+                        <ul>
+                            <li onclick="prod()">AVEER</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PREEN</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">UTSAVA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">GULNAZ</li>
+                        </ul>
+                    </li>
+                    </li>
+
+                    <li>MIA
+                        <ul>
+                            <li onclick="prod()">MIA GLAM</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MIA FESTIVE</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MIA EINGS</li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+            <div><img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/8db4d9e7-8a24-4486-a867-e507a3c3f6be/store-locataor.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8db4d9e7-8a24-4486-a867-e507a3c3f6be-m2i4h5c"
+                    id="location" /></div>
+            <div><img
+                    src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png"
+                    id="srch" /></div>
+        </div><br><br><br><br>
+        <div id="child1">
+            <div><button onclick="home()"
+                    style="border: none;background: none;color: rgb(73, 72, 72);font-size: 13px;cursor: pointer;">HOME</button>
+                ><span></span> PRODUCT<span></span> ><span></span><span id="spa"></span></div>
+        </div>
+        <button id="r1" onclick="imageChange1()" style="float: left;margin-left: 11%;cursor: pointer;"
+            class="butnSmall"></button>
+
+        <div id="child2">
+            <div>
+                <img id="mainImg" style="width: 103%;height: 26vw;">
+                <button class="underline zoom" onclick="zoom()" id="zooo">CLICK TO ZOOM</button>
+                <div>
+                    <img id="img1" onclick="imageChange1()" class="imgSmall imgSR">
+                    <img id="img2" onclick="imageChange2()" class="imgSmall">
+                    <button id="r2" onclick="imageChange2()" style="float: right;margin-top: 13%;cursor: pointer;"
+                        class="butnSmall">&#62</button>
+                </div>
+            </div>
+            <div id="second">
+                <div>
+                    <h3 class="h3">513220PPVAAA002EA000070</h3>
+                    <h3 id="hh" class="h31">Opulent Elaborate Pendant</h3>
+                    <button id="dollars" class="right">$</button>
+                    <button id="rupees" class="right" style="border: 1px solid black;">&#x20b9</button>
+                    <h3 id="price"></h3>
+                    <div class="inc">(Incl. of all taxes)</div>
+                    <button class="underline" onClick="info2()">Price Breakup</button>
+                </div>
+                <div>
+                    <div id="weight">*Weight and Price may vary subject to the stock available.</div>
+                    <div id="color">TRY ON AVAILABLE</div>
+                    <div class="inc font">Illuminate your ethnic ensemble with this ornate pendant crafted in 22 karat
+                        yellow gold</div><br>
+                    <button class="underline fontUnder" onclick="info1()">Product details</button>
+                    <div class="gross">Gross Weight</div>
+                    <button onclick="change()" id="sq1" class="square sq">4.567g</button>
+                    <button onclick="change1()" id="sq2" class="square">4.845g</button>
+                    <button onclick="change2()" id="sq3" class="square">4.859g</button>
+                </div>
+                <div>
+                    <button class="square back">TRY ON</button>
+                    <button class="square back" onclick="cartPage()">ADD TO CART</button>
+                    <button class="square border">BOOK AN APPOINTMENT</button>
+                    <div class="tick"><span style="font-weight: bolder;">&#10003</span> ONLY 1 LEFT IN STOCK</div>
+                </div>
+                <div id="alert1"></div>
+                <div id="absolute" style="display: none;"></div>
+            </div>
+        </div>
+        <div>
+            <div class="drop">
+                Pincode / Zipcode Check<span><button onclick="down()" id="up" class="span">&#x2228</button></span>
+            </div>
+            <div id="show"></div>
+        </div>
+        <div>
+            <button onclick="info1()" id="tem1" class="multi left">PRODUCT SPECS</button>
+            <button onclick="info2()" id="tem2" class="multi">PRICE BREAKUP</button>
+            <button onclick="info3()" id="tem3" class="multi">DESCRIPTION</button>
+            <button onclick="info4()" id="tem4" class="multi">REVIEWS</button>
+            <button onclick="info5()" id="tem5" class="multi">MORE INFO</button>
+            <div id="info1" style="display: block;">
+                <div class="bottomGrid">
+                    <div>
+                        <div class="light">PURITY </div>
+                        <div class="light">GENDER </div>
+                        <div class="light">PRODUCT </div>
+                        <div class="light">JEWELLERY TYPE </div>
+                        <div class="light">OCCASION </div>
+                    </div>
+                    <div>
+                        <div class="light">22.00</div>
+                        <div class="light">WOMEN</div>
+                        <div class="light">Pendant</div>
+                        <div class="light">Plain Gold Jewellery</div>
+                        <div class="light">Traditional Wear</div>
+                    </div>
+                    <div style="padding-left: 30%;">
+                        <div class="light marBot">BRAND </div>
+                        <div class="light marBot">COLLECTION </div>
+                        <div class="light marBot">METAL </div>
+                        <div class="light marBot">METAL COLOR </div>
+                    </div>
+                    <div style="padding-left: 30%;">
+                        <div class="light marBot">Tanishq</div>
+                        <div class="light marBot">Akshayam</div>
+                        <div class="light marBot">Gold</div>
+                        <div class="light marBot">Yellow</div>
+                    </div>
+                </div>
+            </div>
+            <div id="info2" style="display: none;">
+                <div id="bottomSix">
+                    <div>
+                        <div class="light golden">Component</div>
+                        <div class="light">22KT Plain Gold</div>
+                        <div class="light bottomBorder">Making Charges</div>
+                        <div class="light">Sub Total</div>
+                        <div class="light">GST</div>
+                        <div class="light bottomBorder padb">Grand Total</div>
+                    </div>
+                    <div>
+                        <div class="light golden">Gold Rate(22KT)</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder">-</div>
+                        <div class="light">-</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder padb">-</div>
+                    </div>
+                    <div>
+                        <div class="light golden">Weight (g)</div>
+                        <div class="light" id="weigh">-</div>
+                        <div class="light bottomBorder">-</div>
+                        <div class="light">-</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder padb">-</div>
+                    </div>
+                    <div>
+                        <div class="light golden">Value</div>
+                        <div class="light" id="chang">-</div>
+                        <div class="light bottomBorder">-</div>
+                        <div class="light">-</div>
+                        <div class="light">&#x20b9 831.75</div>
+                        <div class="light bottomBorder padb">-</div>
+                    </div>
+                    <div>
+                        <div class="light golden">Discount</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder">-</div>
+                        <div class="light">-</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder padb">-</div>
+                    </div>
+                    <div>
+                        <div class="light golden">Final Value</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder">-</div>
+                        <div class="light">-</div>
+                        <div class="light">-</div>
+                        <div class="light bottomBorder padb" id="fVal">-</div>
+                    </div>
+                </div>
+            </div>
+            <div id="info3" style="display: none;">
+                The elaborate artistry makes this pendant a mesmerising sight. It'll pair perfectly with your ethnic
+                outfits for special occasions.
+            </div>
+            <div id="info4" style="display: none;">
+                <div id="bigStar">&#9733 &#9733 &#9733 &#9733 &#9733</div><br>
+                <button id="reviewBtn">BE THE FIRST TO WRITE A REVIEW</button>
+            </div>
+            <div id="info5" style="display: none;">
+                <div style="margin-bottom: 1.5%;"><span style="font-weight: bold;">Net Quantity:</span> 1 N</div>
+                <div style="font-size: 18px;">Contact customer care executive at the manufacturing address above or call
+                    us at 1800-266-0123. Email us at customercare@titan.co.in</div>
+            </div>
+        </div>
+        <div>
+            <div id="gem" style="position: absolute;">
+                <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/3da153bb-9189-40de-940e-c5155b08b515/Guides-Ecomm-Banner-2.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-3da153bb-9189-40de-940e-c5155b08b515-m-yFjiV">
+                <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/f546eb67-a13a-46bb-a8ea-91e2b3eaa50a/Guides-Ecomm-Banner-3.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-f546eb67-a13a-46bb-a8ea-91e2b3eaa50a-m-yFjiV">
+                <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/6b9c9176-df13-4b5c-aff3-761857772999/Guides-Ecomm-Banner-1.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-6b9c9176-df13-4b5c-aff3-761857772999-m-yFjiV">
+            </div>
+            <div style="background-color: #b0a16e; width: 100%;height: 350px;"><span id="guide">BUYING GUIDES</span>
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+<script src="../Script/item.js"></script>

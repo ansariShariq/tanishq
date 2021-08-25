@@ -1,0 +1,765 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Style/style.css" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <title> Tanisq-Online Gold & Diamond</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg3JKYABu3HIjCovwDtmuJrVHuJi1YJHgQA&usqp=CAU" type="image/x-icon">
+</head>
+
+<body>
+    <div class="nav">
+        <a>BRANDS</a>
+        <select class="navoption nav">
+            <option>CURRENCY SELECTOR</option>
+        </select>
+        <select class="navoption nav">
+            <option>GOLD RATE</option>
+        </select>
+        <a class="navRight1" href="login.html" id="l">LOGIN</a>
+        <a class="navRight">ENCIRCLE</a>
+        <a class="navRight">GOLDEN HARVEST</a>
+        <a class="navRight">BOOK AN APPOINTMENT</a>
+        <a class="navRight">WISHLIST</a>
+        <a class="navRight" href="Cart.html">CART(<a id="cartNo">0</a>)</a>
+        <a id="loginName">Login as-
+            <a id="boss"></a>
+        </a>
+    </div>
+    <div class="line"></div>
+    <div style="width: 98%;margin: auto;">
+        <a href="index.html">
+            <div id="tanishqimg">
+                <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" />
+
+            </div>
+        </a>
+        <div>
+            <div class="wrapper">
+                <ul>
+                    <li>JEWELLERY
+
+                        <ul>
+                            <li onclick="prod()">ALL JEWELLERY</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MANGLASUTRA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">CHAIN</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">NECKLACE</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">NOSEPIN</li>
+                        </ul>
+                    </li>
+                    <li>GOLD
+                        <ul>
+                            <li onclick="prod()">MANGLASUTRA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+
+                    </li>
+                    <li>DIAMOND
+                        <ul>
+                            <li onclick="prod()">ENGAEMENT RINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">EARRINGS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PENDANTS</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">FINGER RINGS</li>
+                        </ul>
+                    </li>
+                    <li>RING
+                        <ul>
+                            <li onclick="prod()">GOLD</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PLATINUM</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">DIAMOND</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">BAND</li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>DIGITAL GOLD</li>
+                    <li>COLLECTIONS
+                        <ul>
+                            <li onclick="prod()">AVEER</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">PREEN</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">UTSAVA</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">GULNAZ</li>
+                        </ul>
+                    </li>
+                    </li>
+
+                    <li>MIA
+                        <ul>
+                            <li onclick="prod()">MIA GLAM</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MIA FESTIVE</li>
+                        </ul>
+                        <ul>
+                            <li onclick="prod()">MIA EINGS</li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+            <div><img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/8db4d9e7-8a24-4486-a867-e507a3c3f6be/store-locataor.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8db4d9e7-8a24-4486-a867-e507a3c3f6be-m2i4h5c"
+                    id="location" /></div>
+            <div><img
+                    src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png"
+                    id="srch" /></div>
+        </div>
+        <div id="slideShow"></div>
+
+        <div class="carousel1" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
+            <div onclick="prod()" class="carousel-cell1" >
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/d9dfbaf4-cb96-4aef-9ce2-5320fe02bb03/Earring-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-d9dfbaf4-cb96-4aef-9ce2-5320fe02bb03-niwxlC3" />
+                <h6>EARRINGS</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/6726ce10-0d7c-4f5f-8078-64ce0282e677/goldcoin-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-6726ce10-0d7c-4f5f-8078-64ce0282e677-niwxqpM" />
+                <h6>GOLD COINS</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/87bc5b27-9131-4a12-a4a7-9eeda942e7b5/Pendant-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-87bc5b27-9131-4a12-a4a7-9eeda942e7b5-niwxmC." />
+                <h6>PENDANTS</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/8dba9266-cb38-462c-a58d-b04e1abaacc1/bangle2.-bgpng.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8dba9266-cb38-462c-a58d-b04e1abaacc1-niwxlH4" />
+                <h6>BANGLES</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/52d947e5-5c09-45e8-b563-82fad0227610/category-giftCard-web-3.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-52d947e5-5c09-45e8-b563-82fad0227610-nmS4LCg" />
+                <h6>GIFT CARD</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/3df1c588-465f-4388-b895-a88ca270527b/fingerring-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-3df1c588-465f-4388-b895-a88ca270527b-niwxw5l" />
+                <h6>FINGER RINGS</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/8c58b09b-a8e5-4909-ab3c-001188b164ca/chain-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8c58b09b-a8e5-4909-ab3c-001188b164ca-niwxmpW" />
+                <h6>CHAINS</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/6bc3d11c-f6be-47cd-a0c6-dd257856ae01/nosepin-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-6bc3d11c-f6be-47cd-a0c6-dd257856ae01-niwxq4P" />
+                <h6>NOSE PIN</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/12a7a1d8-6645-48fe-a9ab-8b9d533690bf/Mangalsutra-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-12a7a1d8-6645-48fe-a9ab-8b9d533690bf-niwxucX" />
+                <h6>MANGLASUTRA</h6>
+            </div>
+            <div onclick="prod()" class="carousel-cell1" id="b10"
+               >
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/0ee9637f-0569-4100-9210-68c30189142e/neckwear-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-0ee9637f-0569-4100-9210-68c30189142e-niwxssC" />
+                <h6>NECKWEAR</h6>
+            </div>
+
+
+
+        </div>
+        <div class="line" style="margin-top: 30px;"></div>
+        <div id="exclu">Exclusively for you!</div>
+        <div id="main">
+            <div id="img1"> <img src="https://staticimg.titan.co.in/Tanishq/Adobe/north_bangles.jpg"></div>
+            <div id="img2"> <img src="https://staticimg.titan.co.in/Tanishq/Adobe/north_earrings.jpg"></div>
+            <div id="img3"> <img src="https://staticimg.titan.co.in/Tanishq/Adobe/north_necklace.jpg"></div>
+        </div>
+        <h2 class="w3-center">Top Seller</h2>
+        <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
+            <div class="carousel-cell" onmouseover="boder('t1')" id="t1" onmouseout="noboder('t1')"
+                onclick="store(0), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/GCTanishq_1.jpg?impolicy=pqlow" />
+                <div class="imgText">TANISHQ GIFT CARD</div>
+                <div class="money">₹ 1000</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t2')" id="t2" onmouseout="noboder('t2')"
+                onclick="store(1), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/510433SEAAGA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">ROMANTIC STUD EARRINGS</div>
+                <div class="money">₹ 7529</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t3')" id="t3" onmouseout="noboder('t3')"
+                onclick="store(2), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/500063OXAAAB04_1.jpg?impolicy=pqlow" />
+                <div class="imgText">GLIMMERING SINGLE STUD DIAM..</div>
+                <div class="money">₹ 7428</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t4')" id="t4" onmouseout="noboder('t4')"
+                onclick="store(3), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/500063OFAABA02_1.jpg?impolicy=pqlow" />
+                <div class="imgText">TANISHQ 18 KARAT DIAMOND NO..</div>
+                <div class="money">₹ 5116</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t5')" id="t5" onmouseout="noboder('t5')"
+                onclick="store(4), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/5111541XCABA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">RADIANT GOLD PENDANT AND EAR...</div>
+                <div class="money">₹ 35087</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t6')" id="t6" onmouseout="noboder('t6')"
+                onclick="store(5), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/510805SIAAGA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">DAINTY CURVY GOLD STUD EARRI..</div>
+                <div class="money">₹ 11030</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t7')" id="t7" onmouseout="noboder('t7')"
+                onclick="store(6), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/500063OXAABB02_1.jpg?impolicy=pqlow" />
+                <div class="imgText">18 KARAT GOLD AND DIAMOND N..</div>
+                <div class="money">₹ 7118</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t8')" id="t8" onmouseout="noboder('t8')"
+                onclick="store(7), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/510160SPAAGA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">ALLURING FLORAL GOLD STUD EAR..</div>
+                <div class="money">₹ 11258</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t9')" id="t9" onmouseout="noboder('t9')"
+                onclick="store(8), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/501720SDHAAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">GLEAMING ROUND GOLD STUD EAR...</div>
+                <div class="money">₹ 9296</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t10')" id="t10" onmouseout="noboder('t10')"
+                onclick="store(9), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/512814PHZAAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">ETHEREAL GANPATI GOLD PANDANT</div>
+                <div class="money">₹ 6668</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t11')" id="t11" onmouseout="noboder('t11')"
+                onclick="store(10), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/502998SBZAAA09_1.jpg?impolicy=pqlow" />
+                <div class="imgText">ROMANTIC DIAMOND HEART STU..</div>
+                <div class="money">₹ 9303</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('t12')" id="t12" onmouseout="noboder('t12')"
+                onclick="store(11), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/501032DHAABA18_1.jpg?impolicy=pqlow" />
+                <div class="imgText">KUMUDA RUBY DROP EARRINGS</div>
+                <div class="money">₹ 20705</div>
+            </div>
+        </div>
+        <div id="little">Little Big Moments by Tanishq</div>
+        <iframe id="video" src="https://www.youtube.com/embed/VCZ5f_PIxV8" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div id="gender">Shop By Gender</div>
+        <div id="genderbox">
+            <div id="gender1" onmouseover="boder('gender1')" onmouseout="noboder('gender1')"> <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ae6a3bbf-07dc-43ae-a529-94ea24d8bc4a/Gender%2BIcons_child.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ae6a3bbf-07dc-43ae-a529-94ea24d8bc4a-nAXIxGu"
+                    alt="">
+                <div>KIDS</div>
+            </div>
+            <div id="gender2" onmouseover="boder('gender2')" onmouseout="noboder('gender2')"> <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/f0879ce9-df52-4388-ab79-3ece2b21a482/Gender+Icons+Man.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-f0879ce9-df52-4388-ab79-3ece2b21a482-niwxwDt"
+                    alt="">
+                <div>MEN</div>
+            </div>
+            <div id="gender3" onmouseover="boder('gender3')" onmouseout="noboder('gender3')"> <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/16282cdf-557f-454b-83d5-ddc33976af9e/Gender%2BIcons_lady.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-16282cdf-557f-454b-83d5-ddc33976af9e-nAXJ4bs"
+                    alt="">
+                <div>WOMEN</div>
+            </div>
+            <div id="gender4" onmouseover="boder('gender4')" onmouseout="noboder('gender4')"> <img
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/628c5886-9c2d-40da-8d24-07336efe70e1/Gender+Icons_couple.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-628c5886-9c2d-40da-8d24-07336efe70e1-neT--Ng"
+                    alt="">
+                <div>PAIR</div>
+            </div>
+        </div>
+        <div id="one">1/1</div>
+        <h2 class="w3-center">Trending Products</h2>
+        <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
+            <div class="carousel-cell" onmouseover="boder('p1')" id="p1" onmouseout="noboder('p1')"
+                onclick="store(12), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/503213CADAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">18 Karat Gold Chain</div>
+                <div class="money">₹ 24466</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p2')" id="p2" onmouseout="noboder('p2')"
+                onclick="store(13), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/513220VIX2A00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Stylish Sleek Bangle</div>
+                <div class="money">₹ 41699</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p3')" id="p3" onmouseout="noboder('p3')"
+                onclick="store(14), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/512216VIO1A00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Minimalastic Gold Kada For Men</div>
+                <div class="money">₹ 38590</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p4')" id="p4" onmouseout="noboder('p4')"
+                onclick="store(15), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/511518YKBAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">ManglaSutra Chain In 22 Karat Ye..</div>
+                <div class="money">₹ 130757</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p5')" id="p5" onmouseout="noboder('p5')"
+                onclick="store(16), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/5111541XCABA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Radaint Gold Mesh Ring</div>
+                <div class="money">₹ 15772</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p6')" id="p6" onmouseout="noboder('p6')"
+                onclick="store(17), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/511156CTHAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Eligant Gold Chain For Kids</div>
+                <div class="money">₹ 27665</div>
+            </div>
+
+            <div class="carousel-cell" onmouseover="boder('p7')" id="p7" onmouseout="noboder('p7')"
+                onclick="store(18), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/510160SPAAGA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Brilant Charming Bangle</div>
+                <div class="money">₹ 42104</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p8')" id="p8" onmouseout="noboder('p8')"
+                onclick="store(19), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/510082CNAAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Simple And Classy Gold Chain For...</div>
+                <div class="money">₹ 19556</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p9')" id="p9" onmouseout="noboder('p9')"
+                onclick="store(20), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/5110982JQAAA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Shimmering Gold Neckwear set for...</div>
+                <div class="money">₹ 95370</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p10')" id="p10" onmouseout="noboder('p10')"
+                onclick="store(21), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/5137192FA1BA00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Resplendent Gold Neckwear Set</div>
+                <div class="money">₹ 477551</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p11')" id="p11" onmouseout="noboder('p11')"
+                onclick="store(22), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/5027202ATABA32_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Winter Chandelier</div>
+                <div class="money">₹ 929211</div>
+            </div>
+            <div class="carousel-cell" onmouseover="boder('p12')" id="p12" onmouseout="noboder('p12')"
+                onclick="store(23), item()">
+                <img class="w3-image"
+                    src="https://staticimg.titan.co.in/Tanishq/Catalog/513319VFO2A00_1.jpg?impolicy=pqlow" />
+                <div class="imgText">Lustrious Gold Bangles</div>
+                <div class="money">₹ 60008</div>
+            </div>
+        </div>
+        <div>
+            <img id="tata"
+                src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/31ce4125-c71b-4855-b3f5-c94c1ca13abf/desktop/1920x600Px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-31ce4125-c71b-4855-b3f5-c94c1ca13abf-desktop-nwQDyzx"
+                alt="">
+        </div>
+        <h1 class="w3-center">New for you!</h1>
+        <div class="tata" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":false }'>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/d2203d22-7813-45d0-be81-32375b15b833/Preens.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-d2203d22-7813-45d0-be81-32375b15b833-nhYh9if" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/0e9fd28c-e1ba-4394-9201-2e6851431d75/Collectionlandingpage-mobile-420-X528-+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-0e9fd28c-e1ba-4394-9201-2e6851431d75-nhYhk4f" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/b9fae3ab-284e-4263-a5fb-f98b6df8e0e2/Queen.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-b9fae3ab-284e-4263-a5fb-f98b6df8e0e2-nhYhpEs" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/50691993-a650-4062-acac-3039589553b2/diamond-Mangalsuthra.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-50691993-a650-4062-acac-3039589553b2-nhYgCoz" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/c8008cb5-37c6-4186-8b6e-88a3f2c29fcc/gulnaaz_420x528_012119+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-c8008cb5-37c6-4186-8b6e-88a3f2c29fcc-nhYgKHw" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/61c7627b-5b50-4eda-8a0f-2dc1772ff0a7/Padmavati-420X528.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-61c7627b-5b50-4eda-8a0f-2dc1772ff0a7-nhYh3R5" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/bd77144e-1ec1-4ac8-9df8-5297f0a77231/RIng+Size+Calculator+V1.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-bd77144e-1ec1-4ac8-9df8-5297f0a77231-nj3mC0L" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/879bae70-bd0b-4d61-9eb6-382b58e6c2c1/MicrosoftTeams-image+%28116%29.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-879bae70-bd0b-4d61-9eb6-382b58e6c2c1-nx9lJht" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/02c4b519-260c-4341-9a08-9ac079915471/At+Home+Jewellery+Care_+420x528+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-02c4b519-260c-4341-9a08-9ac079915471-njiWf6x" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/b966e7fe-bcd5-44c0-9c6a-d9083d47474a/420x528+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-b966e7fe-bcd5-44c0-9c6a-d9083d47474a-njiWjK5" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/35300887-c365-4080-93ea-6dfcc79817f8/Starry+Selection+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-35300887-c365-4080-93ea-6dfcc79817f8-nhYg5s-" />
+
+            </div>
+            <div class="tata-cell">
+                <img class="w3-image"
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/46513eb9-7fd0-46ee-9cf0-66f3e090fddf/Wear-Your-Prayer-Gayatri-mantra-420X528+%282%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-46513eb9-7fd0-46ee-9cf0-66f3e090fddf-nhYgst-" />
+
+            </div>
+        </div>
+        <div>
+            <img id="sale"
+                src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/0aa34dfe-e337-4263-b3a4-4a2f9c1c53b6/desktop/1920X712.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-0aa34dfe-e337-4263-b3a4-4a2f9c1c53b6-desktop-nFBDo5w"
+                alt="">
+        </div>
+        <h1 class="w3-center">Tanishq Promises</h1>
+        <div id="promise">
+            <div class="pro">
+
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fd847e02-9af1-412e-9122-1c97dc4bf019/promises_bg.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fd847e02-9af1-412e-9122-1c97dc4bf019-n88JNm3"
+                    class="fishes" />
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fc39efb2-8d36-458e-a4c9-d9c86e78abe0/promises_stamp.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fc39efb2-8d36-458e-a4c9-d9c86e78abe0-n88qI.O"
+                    class="fish stamp">
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/b5d98492-544b-4861-a29b-d6ebf93a3c78/promise1.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-b5d98492-544b-4861-a29b-d6ebf93a3c78-n88qI.O"
+                    class="fish logo" />
+                <h1 class="count"><i>1</i></h1>
+                <h6 class="fish" id="fishText"><i> The state-of-the-art Karatmeter present in
+                        every Tanishq store is a very accurate way of
+                        measuring the purity of gold, thus making
+                        our gold as pure as we say it is.</i></h6>
+            </div>
+            <div class="pro">
+
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fd847e02-9af1-412e-9122-1c97dc4bf019/promises_bg.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fd847e02-9af1-412e-9122-1c97dc4bf019-n88JNm3"
+                    class="fishes" />
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fc39efb2-8d36-458e-a4c9-d9c86e78abe0/promises_stamp.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fc39efb2-8d36-458e-a4c9-d9c86e78abe0-n88qI.O"
+                    class="fish stamp">
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/93a1e20f-8a49-4652-a82c-52802536276a/promise2.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-93a1e20f-8a49-4652-a82c-52802536276a-nH4clH5"
+                    class="fish logo" />
+                <h1 class="count"><i>2</i></h1>
+                <h6 class="fish" id="fishText"><i> Each Tanishq piece is crafted to give it a
+                        signature finish. Yet, you get a wide range of
+                        gold jewellery choices with the making
+                        charge starting at 8% only.</i></h6>
+                <h6 class="fish" id="term">T&C apply</h6>
+            </div>
+            <div class="pro">
+
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fd847e02-9af1-412e-9122-1c97dc4bf019/promises_bg.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fd847e02-9af1-412e-9122-1c97dc4bf019-n88JNm3"
+                    class="fishes" />
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/fc39efb2-8d36-458e-a4c9-d9c86e78abe0/promises_stamp.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-fc39efb2-8d36-458e-a4c9-d9c86e78abe0-n88qI.O"
+                    class="fish stamp">
+                <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/dd80f9b9-4f6f-46cb-a3f6-c0ee875996d5/promise3.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-dd80f9b9-4f6f-46cb-a3f6-c0ee875996d5-nH4clLN"
+                    class="fish logo" />
+                <h1 class="count"><i>3</i></h1>
+                <h6 class="fish" id="fishText"><i> We charge only for the actual weight of gold,
+                        after subtracting the weight of stones from
+                        the total weight of the piece. You are never
+                        charged the price of gold for the weight of
+                        stones.</i></h6>
+            </div>
+        </div>
+        <div id="secondFooter">
+            <div class="text1">
+                <div class="text11">100% ORIGINAL</div>
+                <h6 class="text111">All products are original and go through
+                    strict quality check.</h6>
+            </div>
+            <div class="text1">
+                <div class="text11">TATA PRODUCTS</div>
+                <h6 class="text111">The Tata seal of Trust comes with all our products</h6>
+            </div>
+            <div class="text1">
+                <div class="text11">SHIPPING</div>
+                <h6 class="text111">Shipping in India is free. Shipping charges applicable for International locations.
+                </h6>
+            </div>
+        </div>
+        <div id="footer">
+            <h2 id="find">Find a Store Near You</h2>
+            <div id="we">We are currently open with 320+ stores in India and we plan to open more number of stores for
+                you. Find your nearest store for a great shopping experience.</div>
+            <button id="location1">USE MY CURRENT LOCATION</button>
+            <div id="or">or</div>
+
+            <input type="text" id="pin" placeholder="ENTER YOUR CITY OR PINCODE">
+            <button id="pinbtn">SEARCH</button>
+            <div id="line"></div>
+            <div id="know">KNOW MORE</div>
+            <div id="container1">
+                <h4>Customer Service</h4>
+                <h6>HELP & CONTACT</h6>
+                <h6>DELIVERY INFORMATION</h6>
+                <h6>INTERNATIONAL SHIPPING</h6>
+                <h6>RETURNS</h6>
+                <h6>PAYMENT OPTIONS</h6>
+                <h6>TRACK ORDER</h6>
+                <h6>ENCIRCLE PROGRAMS</h6>
+                <h6>OFFER & CONTEST DETAILS</h6>
+            </div>
+            <div id="container2">
+                <h4>About Tanishq</h4>
+                <h6>CAREERS</h6>
+                <h6>FIND A STORE</h6>
+                <h6>BLOG</h6>
+
+            </div>
+            <div id="container3">
+                <h4>Sign up to receive exclusive offers and news</h4>
+                <input type="text" id="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+                <button id="emailbtn">SUBSCRIBE</button>
+                <h4>Follow us on</h4>
+                <h4 id="down">DOWNLOAD OUR TANISHQ APP</h4>
+                <div id="ios"><img
+                        src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/1115befe-2f44-4ba1-aa4a-2e516cfa8d33/iOs.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-1115befe-2f44-4ba1-aa4a-2e516cfa8d33-nhHOjmu"
+                        alt=""></div>
+                <div><img id="play"
+                        src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/36630bbd-afb2-4ea8-bb0f-7b922f212045/google-play-store.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-36630bbd-afb2-4ea8-bb0f-7b922f212045-nhD-nMo"
+                        alt=""></div>
+                <div id="line2"></div>
+                <div id="cond">TERMS AND CONDITIONS</div>
+                <div id="pri">PRIVACY POLICY</div>
+                <div id="titan">© 2021 Titan Company Limited. All Rights Reserved.</div>
+
+            </div>
+            <!-- @format -->
+            <div style="clear: both;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.44 10.89" class="visa1">
+                    <defs></defs>
+                    <title>VISA</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <polygon class="cls-1" points="12.48 10.73 14.28 0.2 17.16 0.2 15.37 10.73 12.48 10.73">
+                            </polygon>
+                            <path class="cls-1"
+                                d="M25.78.44A7.18,7.18,0,0,0,23.19,0c-2.84,0-4.84,1.43-4.84,3.47,0,1.51,1.43,2.36,2.52,2.86s1.49.85,1.49,1.31c0,.71-.89,1-1.71,1A6.17,6.17,0,0,1,18,8.13L17.59,8l-.4,2.36a9.06,9.06,0,0,0,3.21.56c3,0,5-1.41,5-3.59,0-1.19-.75-2.12-2.4-2.86-1-.48-1.61-.81-1.61-1.31s.52-.91,1.63-.91a5,5,0,0,1,2.14.4l.26.12.36-2.3">
+                            </path>
+                            <path class="cls-1"
+                                d="M33.14.2H30.92a1.44,1.44,0,0,0-1.51.87l-4.26,9.64h3s.48-1.29.61-1.57h3.67l.34,1.57h2.66L33.14.2M29.59,7c.24-.61,1.15-2.94,1.15-2.94s.24-.61.38-1l.2.91s.54,2.52.67,3Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M10.08.2,7.28,7.38,7,5.93A8.19,8.19,0,0,0,3,1.51l2.56,9.22h3L13.13.2h-3"></path>
+                            <path class="cls-1" d="M4.68.2H0L0,.42c3.61.87,6,3,7,5.51L6,1.09A1.2,1.2,0,0,0,4.68.2">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <!-- @format -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid" width="72" height="50" viewBox="0 0 72 43" class="visa">
+                    <image
+                        xlink:href="data:img/png;base64,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"
+                        x="-2" y="-1" width="76" height="80"></image>
+                </svg>
+                <!-- @format -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.5 13.19" class="visa">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+
+                        </style>
+                    </defs>
+                    <title>PayPal</title>
+                    <g class="cls-1" id="Layer_2" data-name="Layer 2">
+                        <g class="cls-1" id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M33.4,0H29.55A.53.53,0,0,0,29,.45l-1.56,9.87a.32.32,0,0,0,.32.37h2a.37.37,0,0,0,.37-.32l.44-2.8a.53.53,0,0,1,.53-.45h1.22c2.54,0,4-1.23,4.38-3.66A3,3,0,0,0,36.21,1,3.57,3.57,0,0,0,33.4,0Zm.44,3.61C33.63,5,32.58,5,31.56,5H31l.41-2.58a.32.32,0,0,1,.32-.27H32c.69,0,1.35,0,1.69.4A1.28,1.28,0,0,1,33.84,3.61Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M5.94,0H2.09a.53.53,0,0,0-.53.45L0,10.32a.32.32,0,0,0,.32.37H2.16a.53.53,0,0,0,.53-.45l.42-2.66a.53.53,0,0,1,.53-.45H4.85c2.54,0,4-1.23,4.38-3.66A3,3,0,0,0,8.75,1,3.57,3.57,0,0,0,5.94,0Zm.44,3.61C6.17,5,5.12,5,4.1,5H3.52l.41-2.58a.32.32,0,0,1,.32-.27h.27c.69,0,1.35,0,1.69.4A1.28,1.28,0,0,1,6.38,3.61Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M17.45,3.56H15.6a.32.32,0,0,0-.32.27l-.08.52-.13-.19a2.62,2.62,0,0,0-2.18-.77A4.24,4.24,0,0,0,8.78,7.1a3.48,3.48,0,0,0,.69,2.83,2.89,2.89,0,0,0,2.32.94,3.53,3.53,0,0,0,2.55-1.05l-.08.51a.32.32,0,0,0,.32.37h1.66a.53.53,0,0,0,.53-.45l1-6.31A.32.32,0,0,0,17.45,3.56ZM14.88,7.15A2.06,2.06,0,0,1,12.8,8.91a1.56,1.56,0,0,1-1.24-.5,1.57,1.57,0,0,1-.29-1.29,2.06,2.06,0,0,1,2.07-1.77,1.55,1.55,0,0,1,1.23.5A1.59,1.59,0,0,1,14.88,7.15Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M44.91,3.56H43.06a.32.32,0,0,0-.32.27l-.08.52-.13-.19a2.62,2.62,0,0,0-2.18-.77A4.24,4.24,0,0,0,36.24,7.1a3.48,3.48,0,0,0,.69,2.83,2.89,2.89,0,0,0,2.32.94A3.53,3.53,0,0,0,41.8,9.81l-.08.51a.32.32,0,0,0,.32.37H43.7a.53.53,0,0,0,.53-.45l1-6.31A.32.32,0,0,0,44.91,3.56ZM42.34,7.15a2.06,2.06,0,0,1-2.08,1.76A1.56,1.56,0,0,1,39,8.41a1.57,1.57,0,0,1-.29-1.29A2.06,2.06,0,0,1,40.8,5.34a1.55,1.55,0,0,1,1.23.5A1.59,1.59,0,0,1,42.34,7.15Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M27.27,3.56H25.41A.54.54,0,0,0,25,3.8L22.41,7.56,21.33,3.94a.54.54,0,0,0-.51-.38H19a.32.32,0,0,0-.3.42l2,6-1.92,2.71a.32.32,0,0,0,.26.51h1.85a.53.53,0,0,0,.44-.23l6.16-8.89A.32.32,0,0,0,27.27,3.56Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M47.08.27,45.5,10.32a.32.32,0,0,0,.32.37h1.59a.53.53,0,0,0,.53-.45L49.49.37A.32.32,0,0,0,49.18,0H47.4A.32.32,0,0,0,47.08.27Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <svg class="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid" width="66" height="25" viewBox="0 0 66 41">
+                    <image
+                        xlink:href="data:img/png;base64,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"
+                        width="66" height="41"></image>
+                </svg>
+                <!-- @format -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.81 20.83" class="visa">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+
+                        </style>
+                    </defs>
+                    <title>Axis Bank</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g class="cls-1" id="Layer_1-2" data-name="Layer 1">
+                            <polygon class="cls-1"
+                                points="81.11 13.98 81.11 6.46 82.53 6.46 82.53 9.57 85.67 6.46 87.4 6.46 83.94 9.8 87.81 13.98 85.98 13.98 82.53 10.14 82.53 13.98 81.11 13.98 81.11 13.98">
+                            </polygon>
+                            <path class="cls-1"
+                                d="M72.28,14V6.16l5.54,4.6.46.42q.23.22.49.5V6.46h1.31v7.81L74.42,9.59c-.15-.13-.3-.26-.44-.4a5.88,5.88,0,0,1-.4-.44V14Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M70.07,14l-1-1.94H65.63l-1,1.94H63.12l4.23-7.82L71.57,14Zm-3.92-3h2.43l-.89-1.71c-.05-.11-.11-.24-.16-.38s-.11-.3-.17-.48c0,.16-.1.32-.15.46s-.11.27-.16.39L66.15,11Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M57.57,14V6.46h2.2a8,8,0,0,1,1.39.09,2.19,2.19,0,0,1,.76.29,1.79,1.79,0,0,1,.63.67,1.92,1.92,0,0,1,.22.92,1.56,1.56,0,0,1-.32,1,1.71,1.71,0,0,1-.94.56,1.88,1.88,0,0,1,1.2.6,1.82,1.82,0,0,1,.44,1.25,2.07,2.07,0,0,1-.19.87,1.91,1.91,0,0,1-.52.7,2.05,2.05,0,0,1-.89.44,8.54,8.54,0,0,1-1.78.13ZM59,13h.49a9,9,0,0,0,1.11-.05,1.58,1.58,0,0,0,.58-.18,1.05,1.05,0,0,0,.4-.4,1.1,1.1,0,0,0,.14-.56,1.12,1.12,0,0,0-.17-.63,1.14,1.14,0,0,0-.49-.42,1.88,1.88,0,0,0-.46-.13,4.75,4.75,0,0,0-.69,0H59V13Zm0-3.32h.54a3.11,3.11,0,0,0,1.43-.24.85.85,0,0,0,.42-.8A1,1,0,0,0,61,7.73a3,3,0,0,0-1.47-.25H59V9.63Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M46.88,12.47,48,12a1.35,1.35,0,0,0,.57.77,1.91,1.91,0,0,0,1.05.26,1.44,1.44,0,0,0,1-.3,1,1,0,0,0,.36-.81q0-.66-1.22-1.18l-.26-.11a6,6,0,0,1-1.84-1.1,1.69,1.69,0,0,1-.46-1.2,1.84,1.84,0,0,1,.69-1.49,2.77,2.77,0,0,1,1.82-.57,3.36,3.36,0,0,1,1.55.32,1.75,1.75,0,0,1,.86.92L51,8a1.66,1.66,0,0,0-.55-.52,1.4,1.4,0,0,0-.69-.16,1.36,1.36,0,0,0-.87.26.83.83,0,0,0-.32.69Q48.54,9,50,9.55l.17.07a5.17,5.17,0,0,1,1.71,1,1.72,1.72,0,0,1,.46,1.23,2.1,2.1,0,0,1-.75,1.7,3,3,0,0,1-2,.63,3.17,3.17,0,0,1-1.75-.44,2.06,2.06,0,0,1-.89-1.26Z">
+                            </path>
+                            <polygon class="cls-1"
+                                points="44.38 13.98 44.38 6.46 45.74 6.46 45.74 13.98 44.38 13.98 44.38 13.98">
+                            </polygon>
+                            <path class="cls-1"
+                                d="M36.23,14,38.94,10l-2.4-3.59H38L39.18,8.3c.07.09.19.29.36.6l.09.15.2-.34.25-.39,1.27-1.85h1.39L40.3,10l2.64,4h-1.5L40,11.85l0,0-.42-.72-.21.36-.25.38L37.67,14Z">
+                            </path>
+                            <path
+                                d="M34.49,14l-1-1.94H30.22l-1,1.94H27.82l4.05-7.82,4,7.82Zm-3.76-3h2.33L32.2,9.31c0-.11-.1-.24-.15-.38s-.11-.3-.16-.48c0,.16-.09.32-.15.46s-.1.27-.16.39L30.72,11Z">
+                            </path>
+                            <polygon class="cls-1" points="0 20.83 12.19 0 15.95 6.3 7.82 20.73 0 20.83 0 20.83">
+                            </polygon>
+                            <polygon class="cls-1"
+                                points="12.29 12.9 19.81 12.8 24.39 20.73 16.66 20.73 12.29 12.9 12.29 12.9"></polygon>
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+            <div id="widget">
+                <div id="how">How Can I Help You?<button id="x" onclick="x()">X</button>
+                </div>
+                <img id="chat" onclick="help()" src="https://storage.googleapis.com/rso-offers/rsoresized.png" alt="">
+                <div id="chatbox">
+                    <div id="mainhelp">
+                        <div id="welcome">Welcome To Tanishq <button id="cut" onclick="stopChat()">X</button></div>
+                        <div>
+                            <img id="contact"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhuYcyWOfOrmXs7ItuvY2wnvJdNdid_euww&usqp=CAU"
+                                alt="" />
+                        </div>
+                        <div id="input">
+                            <div id="chatText">
+                                Welcome to Tanishq! Please fill in the form below before starting the
+                                chat.
+                            </div>
+                            <div class="name">Name:*</div>
+                            <input class="nameinput" type="text" />
+                            <div class="name">Mobile:*</div>
+                            <input class="nameinput" type="text" />
+                            <div class="name">Email:</div>
+                            <input class="nameinput" type="text" />
+                            <div id="would">
+                                Would you like to receive communication from us on WhatsApp?
+                            </div>
+                            <div><input id="yes" type="checkbox" />Yes</div>
+                            <div><input id="no" type="checkbox" />No</div>
+                            <div id="start">
+                                <div id="final">Start the chat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="../Script/home.js"></script>

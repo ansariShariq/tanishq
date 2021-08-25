@@ -1,0 +1,88 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tanisq-Online Gold & Diamond</title>
+		<link
+			rel="shortcut icon"
+			href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjg3JKYABu3HIjCovwDtmuJrVHuJi1YJHgQA&usqp=CAU"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../Style/login.css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="brandLogo">
+				<img
+					src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4417c959-3482-4f71-942a-a12e015997b6/tanishq.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4417c959-3482-4f71-942a-a12e015997b6-nv8w2CB"
+				/>
+			</div>
+			<div id="loginDetails">
+				<form id="form">
+					<fieldset style="width: 500px; height: 400px">
+						<legend style="padding: 0px 20px">LOGIN</legend>
+						<input type="button" value="LOGIN VIA OTP" id="otpbtn" />
+						<p>OR</p>
+						<div id="emailDetail">
+							<input type="text" id="mobile" placeholder="EMAIL *" />
+							<input type="password" placeholder="PASSWORD" id="password" />
+						</div>
+						<div id="forgetRem">
+							<div>
+								<input type="checkbox" id="remeberme" />
+								<label for="remeberme" style="font-size: 15px"
+									>REMEMBER ME</label
+								><br />
+							</div>
+							<a href="#">FORGET PASSWORD?</a>
+						</div>
+
+						<button type="submit" id="submit" onclick="check(event)">
+							SUBMIT
+						</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div id="bottom-container">
+			<h4>LOGIN USING SOCIAL ACCOUNT</h4>
+			<div
+				style="
+					display: flex;
+					justify-content: center;
+					justify-content: space-between;
+					width: 500px;
+					margin: auto;
+					padding: 20px;
+				"
+			>
+				<button id="facebookLogin">Facebook</button>
+				<button id="googleLogin">Google</button>
+			</div>
+		</div>
+		<div
+			style="
+				display: flex;
+				justify-content: center;
+				margin-right: -80%;
+				font-size: 18px;
+				padding: 15px;
+			"
+		>
+			* Denotes mandatory field.
+		</div>
+		<div id="footer">
+			<span style="font-family: sans-serif; font-weight: 500">NEW USER?</span>
+			<a href="signUp.html">
+				<span id="createAcoount">CREATE AN ACCOUNT</span>
+			</a>
+		</div>
+	</body>
+</html>
+
+<script src="../Script/login.js"></script>

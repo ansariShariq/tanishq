@@ -1,0 +1,426 @@
+/** @format */
+
+.nav {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: rgb(75, 73, 73);
+  margin-left: 7%;
+  font-weight: 600;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: white;
+}
+.navoption {
+  border: 0px;
+  margin-left: 20px;
+}
+.navRight1 {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: rgb(75, 73, 73);
+  margin-left: 13%;
+  cursor: pointer;
+}
+.navRight {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: rgb(75, 73, 73);
+  margin-left: 30px;
+}
+.line {
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+#tanishqimg {
+  margin-top: 14px;
+  margin-left: 3%;
+  float: left;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 95%;
+  cursor: pointer;
+}
+.wrapper ul {
+  list-style: none;
+  margin-top: 15px;
+}
+.wrapper ul li {
+  background-color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  width: 120px;
+  margin-left: 5px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: rgb(105, 102, 102);
+  font-size: 12px;
+  position: relative;
+
+  text-transform: uppercase;
+}
+.wrapper ul li:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper ul ul {
+  display: none;
+}
+.wrapper ul li:hover > ul {
+  display: block;
+  margin-top: 0px;
+}
+.wrapper ul ul ul {
+  margin-left: 100px;
+
+  position: absolute;
+  width: 500px;
+}
+#location {
+  margin-left: 30px;
+  margin-top: 15px;
+  width: 20px;
+  float: left;
+  height: 20px;
+  cursor: pointer;
+}
+#srch {
+  margin-left: 50px;
+  margin-top: 15px;
+  float: left;
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#homebar {
+  border: 0px;
+  background: transparent;
+  float: left;
+  margin-top: 30px;
+}
+.iconbutton {
+  border: 0px;
+  background: transparent;
+  float: left;
+  clear: both;
+}
+hr {
+  width: 100%;
+  color: gray;
+  margin-top: 80px;
+}
+#homebar {
+  background: transparent;
+  border: none;
+  margin-left: 2%;
+  margin-top: 1px;
+  float: left;
+  font-size: 12px;
+}
+.bar > p {
+  margin-top: 0px;
+  float: left;
+}
+#cartbar {
+  background: transparent;
+  margin-top: -35px;
+  font-size: 12px;
+  border: 0px;
+  float: right;
+}
+.bar {
+  margin-top: 20px;
+  width: auto;
+  margin-left: 2%;
+
+  float: left;
+}
+.cart-item {
+  float: left;
+  clear: both;
+  margin-left: 2%;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.cart-item > h1 {
+  float: left;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.ordertext {
+  float: right;
+  clear: both;
+  margin-right: 15%;
+}
+.ordertext > h1 {
+  font-weight: lighter;
+  font-size: 35px;
+}
+.Checkout {
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  min-height: 574px;
+  float: right;
+  clear: both;
+  margin-right: 3%;
+}
+
+.promolink {
+  float: left;
+  border: 1px solid black;
+  list-style: none;
+  padding: 5px;
+}
+#enterpromo {
+  border: 1px solid grey;
+  border-bottom: none;
+  font-size: 18px;
+}
+#viewpromo {
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: 18px;
+  color: grey;
+}
+#promoinput {
+  width: 65%;
+  height: 35px;
+  margin-top: 30px;
+  background-color: rgb(233, 230, 230);
+  border: none;
+}
+#Applybutton {
+  width: 30%;
+  height: 40px;
+  margin-top: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+.cart-summry {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+}
+.orderlefttext {
+  font-family: sans-serif;
+  font-size: 14px;
+  float: left;
+}
+
+.item-price {
+  float: right;
+  font-size: 17px;
+  margin-top: -15px;
+  margin-left: 150px;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.one-item-price {
+  margin-left: 43px;
+}
+.discount {
+  margin-left: 135px;
+}
+.total-price {
+  margin-left: 85px;
+  font-size: 25px;
+  margin-top: 0px;
+}
+.tax-div {
+  float: left;
+  clear: both;
+  margin-top: 0px;
+}
+.checkout-btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 85px;
+}
+#shopping-link {
+  list-style: none;
+  float: left;
+  margin-top: 40px;
+  margin-left: 120px;
+  border-bottom: 1px solid black;
+  font-family: sans-serif;
+  color: rgb(63, 61, 61);
+  font-size: 15px;
+  padding: 5px;
+}
+.Product-box {
+  margin-top: 25px;
+  margin-left: 2%;
+  min-height: 574px;
+  float: left;
+  width: auto;
+}
+.header-item {
+  width: 750px;
+
+  margin-top: 30px;
+  float: left;
+}
+.header-item p {
+  font-size: 15px;
+  font-weight: bold;
+
+  float: left;
+}
+.quantity {
+  margin-left: 61%;
+}
+#total-header {
+  float: right;
+}
+.product-details {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.product-details img {
+  max-width: 150px;
+  margin-top: 25px;
+  float: left;
+}
+.product-dis {
+  float: left;
+  margin-left: 5%;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  max-width: 220px;
+}
+#product-urn {
+  font-size: 10px;
+  margin-top: -10px;
+}
+#weight {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+.wishlist-btn {
+  margin-top: 50px;
+  background-color: rgb(240, 240, 240);
+  width: 80%;
+  height: 50px;
+  float: left;
+  border: none;
+}
+.product-quantity {
+  float: left;
+  max-width: 200px;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+.quantity-div {
+  margin-left: 17px;
+}
+.input-quntity {
+  width: 30px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  margin-left: 10px;
+}
+.fld {
+  border: none;
+  height: 2px;
+  width: 2px;
+  float: left;
+  cursor: pointer;
+}
+#remove-product {
+  float: left;
+  clear: both;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  font-size: 12px;
+  border-bottom: 1px solid grey;
+  margin: 20px;
+  padding: 5px;
+  letter-spacing: 0.16em;
+}
+.checkbox {
+  float: left;
+  clear: both;
+  margin-top: 40px;
+}
+#input {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.lable {
+  display: inline-block;
+  max-width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+#product_price {
+  float: right;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.product-details > hr {
+  margin-top: 30px;
+}
+.shipping-container {
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+.home-delivery {
+  background-color: black;
+  color: white;
+  height: 40px;
+  border: none;
+}
+.contry {
+  margin-left: 10%;
+  float: left;
+}
+.contry p {
+  color: grey;
+}
+.contry select {
+  height: 40px;
+  width: 200px;
+  border: none;
+  background-color: rgb(229, 226, 226);
+}
+.pin {
+  float: right;
+}
+.pin input {
+  border: none;
+  background-color: rgb(229, 226, 226);
+  height: 40px;
+}
+.pin button {
+  border: none;
+  background-color: black;
+  color: white;
+  height: 40px;
+}

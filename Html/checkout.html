@@ -1,0 +1,132 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout</title>
+		<link rel="stylesheet" href="../Style/checkout.css" />
+	</head>
+
+	<body>
+		<div id="top">
+			<div id="container">
+				<h3>Billing Address</h3>
+				<form id="form">
+					<div>
+						Name:
+						<input type="text" id="name" />
+					</div>
+					<div>
+						Email:
+						<input type="email" id="name" />
+					</div>
+					<div>
+						Mobile:
+						<input type="tel" id="name" />
+					</div>
+
+					<div>
+						<label>Country:</label>
+						<select
+							id="country"
+							name="country"
+							style="width: 200px; height: 35px; border: none; outline: none"
+						>
+							<option value="">India</option>
+							<option value="">United State of America</option>
+							<option value="">France</option>
+							<option value="">Canada</option>
+						</select>
+					</div>
+					<div>
+						State/Country:
+						<input type="text" id="sc" style="width: 150px; height: 15px" />
+					</div>
+					<div>
+						Zip/Postal Code:
+						<input
+							type="number"
+							id="zip"
+							maxlength="6"
+							style="width: 70px; height: 15px"
+						/>
+					</div>
+				</form>
+			</div>
+
+			<div id="container1">
+				<h3>Payment Method</h3>
+				<div>
+					<ul
+						style="
+							list-style: none;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							justify-content: space-between;
+							margin-left: -35px;
+						"
+					>
+						<li><button style="background: chartreuse">Credit Card</button></li>
+						<li><button>Paypal</button></li>
+						<li><button>Net Banking</button></li>
+						<li><button>COD</button></li>
+					</ul>
+				</div>
+				<h4>Card Holder</h4>
+				<input type="text" placeholder="Card holder name" />
+				<h4>Card number</h4>
+				<input type="number" placeholder="Card number" />
+				<h4>Expiration Date</h4>
+				<div style="display: flex">
+					<input
+						type="number"
+						value="MM"
+						placeholder="MM"
+						maxlength="2"
+						style="width: 50px"
+					/>
+					<input
+						type="number"
+						value="YY"
+						placeholder="YY"
+						maxlength="4"
+						style="width: 50px"
+					/>
+					<input
+						type="number"
+						value="CVV"
+						placeholder="CVV"
+						maxlength="3"
+						style="width: 50px"
+					/>
+				</div>
+				<div
+					style="display: flex; justify-content: center; align-items: center"
+				>
+					<button
+						onclick="thank()"
+						style="
+							width: 150px;
+							height: 50px;
+							background-color: black;
+							border-radius: 5px;
+							border: none;
+							cursor: pointer;
+						"
+					>
+						Place order
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	function thank() {
+		window.location.href = 'thank.html';
+	}
+</script>
