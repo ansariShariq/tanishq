@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/home.css" />
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
@@ -218,13 +218,22 @@
         </div>
         <h2 class="w3-center">Top Seller</h2>
         <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
-            <div class="carousel-cell" onmouseover="boder('t1')" id="t1" onmouseout="noboder('t1')"
+            <% product.forEach((ele,i)=>{ %>
+                <div class="carousel-cell" onmouseover="boder(`${i}`)" id=`t+${i}` onmouseout="noboder(`${i}`)" onclick="store(0), item()">
+                    <img class="w3-image" src= <%= ele.image1 %> />
+                    <div class="imgText"><%= ele.name %></div>
+                    <div class="money"><%= ele.price %></div>
+                </div>
+            <%})%>
+
+            <!-- <div class="carousel-cell" onmouseover="boder('t1')" id="t1" onmouseout="noboder('t1')"
                 onclick="store(0), item()">
                 <img class="w3-image"
                     src="https://staticimg.titan.co.in/Tanishq/Catalog/GCTanishq_1.jpg?impolicy=pqlow" />
                 <div class="imgText">TANISHQ GIFT CARD</div>
                 <div class="money">₹ 1000</div>
             </div>
+            <div></div>
             <div class="carousel-cell" onmouseover="boder('t2')" id="t2" onmouseout="noboder('t2')"
                 onclick="store(1), item()">
                 <img class="w3-image"
@@ -301,7 +310,7 @@
                     src="https://staticimg.titan.co.in/Tanishq/Catalog/501032DHAABA18_1.jpg?impolicy=pqlow" />
                 <div class="imgText">KUMUDA RUBY DROP EARRINGS</div>
                 <div class="money">₹ 20705</div>
-            </div>
+            </div> -->
         </div>
         <div id="little">Little Big Moments by Tanishq</div>
         <iframe id="video" src="https://www.youtube.com/embed/VCZ5f_PIxV8" title="YouTube video player" frameborder="0"
@@ -761,7 +770,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="../Script/home.js"></script>
+<script src="/static/home.js"></script>
 
 
 
