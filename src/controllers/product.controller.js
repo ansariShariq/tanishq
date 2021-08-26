@@ -17,7 +17,9 @@ router.post("",async (req,res)=>{
 router.get("", async (req,res)=>{
     try{
         const product = await Product.find().lean().exec();
-        return res.send(product);
+        return res.render("home", {
+            product : product
+        });
     }
     catch(err){
         return res.send(err.message);
