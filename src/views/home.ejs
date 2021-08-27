@@ -156,14 +156,11 @@
         <div class="carousel1" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             
             <% product.slice(20,30).forEach((ele)=>{ %>
-                
-                    <a onclick="prod()" href="/allitems" class="carousel-cell1 shariq">
+                    <a onclick="prod()" href="/home/products" class="carousel-cell1 shariq">
                         <img class="w3-image" src= <%= ele.image1 %> />
                         <h6><%= ele.name %></h6>
                     </a>
-                
             <%})%>
-
         </div>
         <div class="line" style="margin-top: 30px;"></div>
         <div id="exclu">Exclusively for you!</div>
@@ -175,11 +172,11 @@
         <h2 class="w3-center">Top Seller</h2>
         <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             <% product.slice(0,12).forEach((ele,i)=>{ %>
-                <div id=`${i}` class="carousel-cell" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
+                <a href="/home/products/items/<%=ele._id%>" id=`${i}` class="carousel-cell shariq" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
                     <img class="w3-image" src= <%= ele.image1 %> />
                     <div class="imgText"><%= ele.name %></div>
                     <div class="money"><%= ele.price %></div>
-                </div>
+                </a>
             <%})%>
         </div>
         <div id="little">Little Big Moments by Tanishq</div>

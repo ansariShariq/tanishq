@@ -4,7 +4,7 @@ const router = express.Router();
 
 const Allitems = require("../models/allItems.model")
 
-router.get("/allitems", async (req,res)=>{   
+router.get("/products", async (req,res)=>{   
     try{
         const allItems =await Allitems.find({}).lean().exec()
         res.status(201).render('allitems',{
