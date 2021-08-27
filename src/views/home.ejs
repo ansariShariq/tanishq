@@ -156,12 +156,12 @@
         <div class="carousel1" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             
             <% product.slice(20,30).forEach((ele)=>{ %>
-                <a class="shariq" href="/allitems">
-                    <div onclick="prod()" class="carousel-cell1">
+                
+                    <a onclick="prod()" href="/allitems" class="carousel-cell1 shariq">
                         <img class="w3-image" src= <%= ele.image1 %> />
                         <h6><%= ele.name %></h6>
-                    </div>
-                </a>
+                    </a>
+                
             <%})%>
 
         </div>
