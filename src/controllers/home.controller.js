@@ -14,11 +14,23 @@ router.post("",async (req,res)=>{
     }
 })
 
+router.get("/products", async (req,res)=>{   
+    try{
+        const allItems =await Product.find({}).lean().exec()
+        res.status(201).render('allitems',{
+            allItems:allItems
+        })
+    }
+    catch(err){
+        res.status(400).send(err.message)
+    }
+})
+
 router.get("/products/items/:id",async (req,res)=>{
     try{
         const item = await Product.find({_id : `${req.params.id}`}).lean().exec();
         return res.render("item",{
-            item : item
+            item : item[0]
         })
     }
     catch(err){

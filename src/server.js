@@ -13,13 +13,11 @@ app.set("views", path.join(__dirname , "views/"));
 app.set("view engine" , "ejs");
 
 app.use("/static", express.static(path.join(__dirname, "style")))
-app.use("/static", express.static(path.join(__dirname, "script")))
+app.use("/static", express.static(path.join(__dirname, "Script")))
 
 const homeController = require("./controllers/home.controller");
 app.use("/home",homeController);
 
-const allItemsController = require("./controllers/allItems.controller");
-app.use("/home",allItemsController)
 
 app.listen("4321",async ()=>{
     await connect()

@@ -1,5 +1,3 @@
-/** @format */
-
 function home(){
     window.location.href = "index.html"
 }
@@ -16,32 +14,24 @@ let div = document.getElementById("second");
 
 
 
-let value = JSON.parse(localStorage.getItem("items"));
+//let value = JSON.parse(localStorage.getItem("items"));
+
+let value = document.getElementById("price");
 
 
-let cost= value.price;
+let cost= Number(value.innerHTML);
+//console.log(cost)
 let tem = cost + 2351;
 let temp = cost + 3468;
-
-let nam = document.getElementById("hh");
-let spa = document.getElementById("spa")
-nam.innerHTML = value.name;
-spa.innerHTML = value.name;
 
 let mainImg = document.getElementById("mainImg")
 let img1 = document.getElementById("img1");
 let img2 = document.getElementById("img2");
 
-mainImg.src = value.image1;
-img1.src = value.image1;
-img2.src = value.image2;
-
-
-
-let price = document.getElementById("price");
+//let price = document.getElementById("price");
 function gridBox(cos){
-    price.innerHTML=""
-    price.innerHTML = `PRICE &#x20b9 ${cos}.00`;
+    value.innerHTML=""
+    value.innerHTML = `PRICE &#x20b9 ${cos}.00`;
 }
 
 gridBox(cost);
@@ -54,7 +44,6 @@ let butn2 = document.getElementById("sq3");
 let chang = document.getElementById("chang");
 let fVal = document.getElementById("fVal");
 let weight = document.getElementById("weigh");
-value["weight"] = "4.567";
 
 
 function change(){
@@ -108,10 +97,11 @@ let r1 = document.getElementById("r1");
 let r2 = document.getElementById("r2");
 
 
+
 function imageChange1(){
     r1.textContent ="";
     r2.innerHTML = "&#62";
-    mainImg.src = value.image1;
+    mainImg.src = img1.src;
     img1.setAttribute("style","border:1px solid black");
     img2.setAttribute("style","border:1px solid rgb(218, 215, 215)");
 }
@@ -119,7 +109,7 @@ function imageChange1(){
 function imageChange2(){
     r2.textContent ="";
     r1.innerHTML = "&#60";
-    mainImg.src = value.image2;
+    mainImg.src = img2.src;
     img2.setAttribute("style","border:1px solid black");
     img1.setAttribute("style","border:1px solid rgb(218, 215, 215)");
 }
@@ -245,7 +235,9 @@ function info2(){
         in2.style.display = "block"
     }
 
-    chang.innerHTML = "&#x20b9"+" "+ (cost-831.75);
+    cost = cost-831.75
+    chang.innerHTML = "&#x20b9"+" "+ (cost);
+    cost = cost + 831.75
     fVal.innerHTML = "&#x20b9"+" "+ (cost) +".00";
     weight.innerHTML = "4.567g";
 
@@ -333,14 +325,14 @@ let child2 = document.createElement("div");
 child2.setAttribute("class","myC2");
 let child21 = document.createElement("img");
 child21.setAttribute("class","myC21");
-child21.src= value.image1;
+child21.src= img1.src;
 let child22 = document.createElement("div");
 child22.setAttribute("style","font-size:17px;")
 let child221 = document.createElement("div");
 child221.setAttribute("style","margin-bottom:10%")
-child221.innerHTML = value.name;
+child221.innerHTML = document.getElementById("hh").innerHTML;
 let child222 = document.createElement("div");
-child222.innerHTML = `${"&#x20b9"} ${value.price} <br><br>Quantity : 1`;
+child222.innerHTML = `${"&#x20b9"} ${cost} <br><br>Quantity : 1`;
 child22.append(child221,child222);
 child2.append(child21,child22);
 let child3 = document.createElement("button");
@@ -355,10 +347,12 @@ function go(){
 function cartPage(){
     let res=true,tempo=true;
         let myarr;
+        let damn;
         if(localStorage.getItem("cart") == null){
             myarr = [];
             res = false;
-            myarr.push(value);
+            damn = {name:document.getElementById("hh").innerHTML,price:cost,image1 : img1.src}
+            myarr.push(damn);
             alert2.style.display="block";
             alert2.textContent ="";
             alert2.append(child1,child2,child3);
@@ -369,19 +363,18 @@ function cartPage(){
         else {
             myarr = JSON.parse(localStorage.getItem("cart"));
             for(let k=0 ; k<myarr.length ; k++){
-                if((myarr[k].name == value.name) && (myarr[k].image1 == value.image1)){
+                if((String(myarr[k].name) == String(document.getElementById("hh").innerHTML)) && (String(myarr[k].image1) == String(img1.src))){
                     res = false;
                     alert1.innerHTML="";
-                    nam.scrollIntoView();
+                    document.getElementById("hh").scrollIntoView();
                     alert1.innerHTML= "Sorry! You can only add the displayed number of items to the cart. Please enter quantity up to 1.";
                     break;
                 }
             }
         }
-    
-        
         if(res == true){
-            myarr.push(value);
+            damn = {name:document.getElementById("hh").innerHTML,price:cost,image1 : img1.src}
+            myarr.push(damn);
             alert2.style.display="block";
             alert2.textContent ="";
             alert2.append(child1,child2,child3);

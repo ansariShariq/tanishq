@@ -1,8 +1,8 @@
 /** @format */
 
-function prod() {
-	window.location.href = 'product.html';
-}
+// function prod() {
+// 	window.location.href = 'product.html';
+// }
 function item() {
 	window.location.href = 'item.html';
 }
