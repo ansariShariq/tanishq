@@ -136,4 +136,24 @@ router.get("/products/cart/:id",async (req,res)=>{
     }
 })
 
+router.get('/products/checkout',async (req,res)=>{
+
+    try{
+        res = await res
+        res.render("checkout")
+    }
+    catch(err){
+        return res.send(err.message)
+    }
+})
+router.get('/products/checkout/thank',async (req,res)=>{
+
+    try{
+        res = await res
+        res.render("thank")
+    }
+    catch(err){
+        return res.send(err.message)
+    }
+})
 module.exports = router;
