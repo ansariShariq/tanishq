@@ -1,7 +1,7 @@
 /** @format */
-.shariq{
+.shariq {
 	text-decoration: none;
-	color:inherit
+	color: inherit;
 }
 .nav {
 	font-family: sans-serif;
@@ -24,6 +24,9 @@
 	color: rgb(75, 73, 73);
 	margin-left: 8%;
 	cursor: pointer;
+}
+.dive:hover {
+	box-shadow: 2px 2px 2px 2px grey;
 }
 #loginName {
 	margin-left: 5px;

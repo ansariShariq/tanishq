@@ -20,14 +20,14 @@
         <select class="navoption nav">
             <option>GOLD RATE</option>
         </select>
-        <a class="navRight1" href="login.html" id="l">LOGIN</a>
+        <a class="navRight1" href="/home/login" id="l">LOGIN</a>
         <a class="navRight">ENCIRCLE</a>
         <a class="navRight">GOLDEN HARVEST</a>
         <a class="navRight">BOOK AN APPOINTMENT</a>
         <a class="navRight">WISHLIST</a>
         <a class="navRight" style="text-decoration: none;color: inherit;" href="/home/products/cart">CART(<a id="cartNo"><%= length %></a>)</a>
-        <a id="loginName">Login as-
-            <a id="boss"></a>
+       <a id="loginName">Login as-<%=user%>
+           
         </a>
     </div>
     <div class="line"></div>
@@ -170,7 +170,7 @@
         <h2 class="w3-center">Top Seller</h2>
         <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             <% product.slice(0,12).forEach((ele,i)=>{ %>
-                <a href="/home/products/items/<%=ele._id%>" id=`${i}` class="carousel-cell shariq" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
+                <a href="/home/products/items/<%=ele._id%>" id=`${i}`  class="carousel-cell shariq dive" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
                     <img class="w3-image" src= <%= ele.image1 %> />
                     <div class="imgText"><%= ele.name %></div>
                     <div class="money"><%= ele.price %></div>
@@ -182,23 +182,23 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <div id="gender">Shop By Gender</div>
-        <div id="genderbox">
-            <div id="gender1" onmouseover="boder('gender1')" onmouseout="noboder('gender1')"> <img
+        <div id="genderbox" >
+            <div id="gender1" class="dive" onmouseover="boder('gender1')" onmouseout="noboder('gender1')"> <img
                     src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ae6a3bbf-07dc-43ae-a529-94ea24d8bc4a/Gender%2BIcons_child.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ae6a3bbf-07dc-43ae-a529-94ea24d8bc4a-nAXIxGu"
                     alt="">
                 <div>KIDS</div>
             </div>
-            <div id="gender2" onmouseover="boder('gender2')" onmouseout="noboder('gender2')"> <img
+            <div id="gender2" class="dive" onmouseover="boder('gender2')" onmouseout="noboder('gender2')"> <img
                     src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/f0879ce9-df52-4388-ab79-3ece2b21a482/Gender+Icons+Man.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-f0879ce9-df52-4388-ab79-3ece2b21a482-niwxwDt"
                     alt="">
                 <div>MEN</div>
             </div>
-            <div id="gender3" onmouseover="boder('gender3')" onmouseout="noboder('gender3')"> <img
+            <div id="gender3" class="dive" onmouseover="boder('gender3')" onmouseout="noboder('gender3')"> <img
                     src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/16282cdf-557f-454b-83d5-ddc33976af9e/Gender%2BIcons_lady.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-16282cdf-557f-454b-83d5-ddc33976af9e-nAXJ4bs"
                     alt="">
                 <div>WOMEN</div>
             </div>
-            <div id="gender4" onmouseover="boder('gender4')" onmouseout="noboder('gender4')"> <img
+            <div id="gender4" class="dive" onmouseover="boder('gender4')" onmouseout="noboder('gender4')"> <img
                     src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/628c5886-9c2d-40da-8d24-07336efe70e1/Gender+Icons_couple.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-628c5886-9c2d-40da-8d24-07336efe70e1-neT--Ng"
                     alt="">
                 <div>PAIR</div>
@@ -208,7 +208,7 @@
         <h2 class="w3-center">Trending Products</h2>
         <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             <% product.slice(12,20).forEach((ele,i)=>{ %>
-                <a href="/home/products/items/<%=ele._id%>" id=`${i}` class="carousel-cell shariq" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
+                <a href="/home/products/items/<%=ele._id%>" id=`${i}` class="carousel-cell shariq dive" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
                     <img class="w3-image" src= <%= ele.image1 %> />
                     <div class="imgText"><%= ele.name %></div>
                     <div class="money"><%= ele.price %></div>
