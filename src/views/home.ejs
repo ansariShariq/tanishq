@@ -25,7 +25,7 @@
         <a class="navRight">GOLDEN HARVEST</a>
         <a class="navRight">BOOK AN APPOINTMENT</a>
         <a class="navRight">WISHLIST</a>
-        <a class="navRight" href="Cart.html">CART(<a id="cartNo">0</a>)</a>
+        <a class="navRight" style="text-decoration: none;color: inherit;" href="/home/products/cart">CART(<a id="cartNo"><%= length %></a>)</a>
         <a id="loginName">Login as-
             <a id="boss"></a>
         </a>
@@ -208,11 +208,11 @@
         <h2 class="w3-center">Trending Products</h2>
         <div class="carousel" data-flickity='{ "groupCells": true, "autoPlay": false, "imagesLoaded":true }'>
             <% product.slice(12,20).forEach((ele,i)=>{ %>
-                <div id=`${i}` class="carousel-cell" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
+                <a href="/home/products/items/<%=ele._id%>" id=`${i}` class="carousel-cell shariq" onmouseover="boder(`${i}`)" onmouseout="noboder(`${i}`)" onclick="store(0), item()">
                     <img class="w3-image" src= <%= ele.image1 %> />
                     <div class="imgText"><%= ele.name %></div>
                     <div class="money"><%= ele.price %></div>
-                </div>
+                </a>
             <%})%>
         </div>
         <div>

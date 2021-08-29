@@ -496,7 +496,8 @@ html {
 }
 
 .cartBtn {
-	width: 100%;
+	text-decoration: none;
+	width: 86.4%;
 	background: black;
 	color: white;
 	margin-top: 8%;

@@ -18,8 +18,8 @@ let div = document.getElementById("second");
 
 let value = document.getElementById("price");
 
-
 let cost= Number(value.innerHTML);
+let mainCost=cost;
 //console.log(cost)
 let tem = cost + 2351;
 let temp = cost + 3468;
@@ -57,7 +57,8 @@ function change(){
     weight.innerHTML = "4.567g";
     value["weight"] = "4.567";
 
-    gridBox(cost)
+    mainCost = cost;
+    gridBox(mainCost)
 }
 
 function change1(){
@@ -71,7 +72,8 @@ function change1(){
     weight.innerHTML = "4.845g";
      value["weight"] = "4.845";
     
-    gridBox(tem)
+    mainCost = tem;
+    gridBox(mainCost)
 }
 
 function change2(){
@@ -85,7 +87,8 @@ function change2(){
     weight.innerHTML = "4.859g";
     value["weight"] = "4.859";
 
-    gridBox(temp);
+    mainCost = temp
+    gridBox(mainCost);
 }
 
 
@@ -315,44 +318,52 @@ if(my != null){
     cartn.innerHTML = my.length;
 }
 
-let alert1 = document.getElementById("alert1");
-let alert2 = document.getElementById("absolute");
-//childs of alert2
-let child1 = document.createElement("div");
-child1.setAttribute("style","margin: 3% 0% 7% 8%")
-child1.innerHTML= "Item Succesfully Added to Cart";
-let child2 = document.createElement("div");
-child2.setAttribute("class","myC2");
-let child21 = document.createElement("img");
-child21.setAttribute("class","myC21");
-child21.src= img1.src;
-let child22 = document.createElement("div");
-child22.setAttribute("style","font-size:17px;")
-let child221 = document.createElement("div");
-child221.setAttribute("style","margin-bottom:10%")
-child221.innerHTML = document.getElementById("hh").innerHTML;
-let child222 = document.createElement("div");
-child222.innerHTML = `${"&#x20b9"} ${cost} <br><br>Quantity : 1`;
-child22.append(child221,child222);
-child2.append(child21,child22);
-let child3 = document.createElement("button");
-child3.innerHTML = "View Cart";
-child3.setAttribute("class","cartBtn")
-child3.setAttribute("onclick" ,"go()")
-
 function go(){
     window.location.href="Cart.html";
 }
 
-function cartPage(){
-    let res=true,tempo=true;
-        let myarr;
-        let damn;
-        if(localStorage.getItem("cart") == null){
-            myarr = [];
-            res = false;
-            damn = {name:document.getElementById("hh").innerHTML,price:cost,image1 : img1.src}
-            myarr.push(damn);
+
+//add to cart option
+function cartPage(i,n,d){
+    
+    let alert1 = document.getElementById("alert1");
+    let alert2 = document.getElementById("absolute");
+
+    //childs of alert2
+    let child1 = document.createElement("div");
+    child1.setAttribute("style","margin: 3% 0% 7% 8%")
+    child1.innerHTML= "Item Succesfully Added to Cart";
+    let child2 = document.createElement("div");
+    child2.setAttribute("class","myC2");
+    let child21 = document.createElement("img");
+    child21.setAttribute("class","myC21");
+    child21.src= img1.src;
+    let child22 = document.createElement("div");
+    child22.setAttribute("style","font-size:17px;")
+    let child221 = document.createElement("div");
+    child221.setAttribute("style","margin-bottom:10%")
+    child221.innerHTML = document.getElementById("hh").innerHTML;
+    let child222 = document.createElement("div");
+    child222.innerHTML = `${"&#x20b9"} ${mainCost} <br><br>Quantity : 1`;
+    child22.append(child221,child222);
+    child2.append(child21,child22);
+    let child3 = document.createElement("div");
+    let newChild = document.createElement("a");
+    newChild.innerHTML = "View Cart";
+    child3.setAttribute("class","cartBtn");
+    newChild.setAttribute("class","cartBtn");
+    newChild.setAttribute("style","margin-left:30%");
+    newChild.href = "/home/products/cart";
+    child3.append(newChild);
+
+
+    fetch("http://localhost:4321/home/add")
+    .then(res =>{
+        return res.json();
+    })
+    .then(data =>{
+        let res=true;
+        if(String(data) == String([])){
             alert2.style.display="block";
             alert2.textContent ="";
             alert2.append(child1,child2,child3);
@@ -360,31 +371,49 @@ function cartPage(){
                 alert2.style.display = "none";
             },5000);
         }
-        else {
-            myarr = JSON.parse(localStorage.getItem("cart"));
-            for(let k=0 ; k<myarr.length ; k++){
-                if((String(myarr[k].name) == String(document.getElementById("hh").innerHTML)) && (String(myarr[k].image1) == String(img1.src))){
+        else{
+            data.forEach((ele)=>{
+                if(ele.id == d){
                     res = false;
-                    alert1.innerHTML="";
-                    document.getElementById("hh").scrollIntoView();
-                    alert1.innerHTML= "Sorry! You can only add the displayed number of items to the cart. Please enter quantity up to 1.";
-                    break;
                 }
+            })
+            if(res == true){
+                alert2.style.display="block";
+                alert2.textContent ="";
+                alert2.append(child1,child2,child3);
+                setTimeout(function(){
+                    alert2.style.display = "none";
+                },5000);
+            }
+            else{
+                alert1.innerHTML="";
+                document.getElementById("hh").scrollIntoView();
+                alert1.innerHTML= "Sorry! You can only add the displayed number of items to the cart. Please enter quantity up to 1.";
             }
         }
-        if(res == true){
-            damn = {name:document.getElementById("hh").innerHTML,price:cost,image1 : img1.src}
-            myarr.push(damn);
-            alert2.style.display="block";
-            alert2.textContent ="";
-            alert2.append(child1,child2,child3);
-            setTimeout(function(){
-                alert2.style.display = "none";
-            },5000);
+    })
+    .catch(err =>{
+        console.log(err);
+    })
+    
+
+    fetch("http://localhost:4321/home/add",{
+        method: "POST",
+        body: JSON.stringify({
+               id : d,
+               name : n,
+               image : i,
+               price: mainCost
+        }),
+        headers: {
+            'Content-Type': 'application/json'
         }
-        
-        localStorage.setItem("cart",JSON.stringify(myarr));
-        cartn.innerHTML = myarr.length;
+    })
+    .then(res => {
+        console.log(res);
+    }).catch(err => {
+        console.log(err);
+    })
     
 }
 

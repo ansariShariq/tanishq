@@ -21,11 +21,11 @@
         <a class="navRight">GOLDEN HARVEST</a>
         <a class="navRight">BOOK AN APPOINTMENT</a>
         <a class="navRight">WISHLIST</a>
-        <a class="navRight" href="Cart.html">CART(<a id="cartNo">0</a>)</a>
+        <a class="navRight" style="text-decoration: none;color: inherit;" href="/home/products/cart">CART(<a id="cartNo"><%= length %></a>)</a>
     </div>
     <div class="line"></div>
     <div style="width: 98%;margin: auto;">
-        <a href="/html">
+        <a href="/home">
             <div id="tanishqimg">
                 <img
                     src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" />
@@ -147,18 +147,18 @@
         <div id="child1">
             <div><a href="/home"
                     style="text-decoration: none;color: inherit;background: none;color: rgb(73, 72, 72);font-size: 13px;cursor: pointer;">HOME</a>
-                ><span></span> PRODUCT<span></span> ><span></span><span id="spa"><%= item.name%></span></div>
+                ><span></span> PRODUCT<span></span> ><span></span><span id="spa"><%= item[0].name%></span></div>
         </div>
         <button id="r1" onclick="imageChange1()" style="float: left;margin-left: 11%;cursor: pointer;"
             class="butnSmall"></button>
 
         <div id="child2">
             <div>
-                <img id="mainImg" style="width: 103%;height: 26vw;" src="<%= item.image1 %>">
+                <img id="mainImg" style="width: 103%;height: 26vw;" src="<%= item[0].image1 %>">
                 <button class="underline zoom" onclick="zoom()" id="zooo">CLICK TO ZOOM</button>
                 <div>
-                    <img id="img1" onclick="imageChange1()" class="imgSmall imgSR" src="<%= item.image1 %>">
-                    <img id="img2" onclick="imageChange2()" class="imgSmall" src="<%= item.image2 %>">
+                    <img id="img1" onclick="imageChange1()" class="imgSmall imgSR" src="<%= item[0].image1 %>">
+                    <img id="img2" onclick="imageChange2()" class="imgSmall" src="<%= item[0].image2 %>">
                     <button id="r2" onclick="imageChange2()" style="float: right;margin-top: 13%;cursor: pointer;"
                         class="butnSmall">&#62</button>
                 </div>
@@ -166,10 +166,10 @@
             <div id="second">
                 <div>
                     <h3 class="h3">513220PPVAAA002EA000070</h3>
-                    <h3 id="hh" class="h31"><%= item.name %></h3>
+                    <h3 id="hh" class="h31"><%= item[0].name %></h3>
                     <button id="dollars" class="right">$</button>
                     <button id="rupees" class="right" style="border: 1px solid black;">&#x20b9</button>
-                    <h3 id="price"><%= item.price %></h3>
+                    <h3 id="price"><%= item[0].price %></h3>
                     <div class="inc">(Incl. of all taxes)</div>
                     <button class="underline" onClick="info2()">Price Breakup</button>
                 </div>
@@ -186,7 +186,7 @@
                 </div>
                 <div>
                     <button class="square back">TRY ON</button>
-                    <button class="square back" onclick="cartPage()">ADD TO CART</button>
+                    <button class="square back" onclick="cartPage('<%= item[0].image1%>','<%= item[0].name%>','<%= item[0]._id%>')">ADD TO CART</button>
                     <button class="square border">BOOK AN APPOINTMENT</button>
                     <div class="tick"><span style="font-weight: bolder;">&#10003</span> ONLY 1 LEFT IN STOCK</div>
                 </div>
