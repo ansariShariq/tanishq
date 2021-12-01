@@ -353,67 +353,65 @@ function cartPage(i,n,d){
     child3.setAttribute("class","cartBtn");
     newChild.setAttribute("class","cartBtn");
     newChild.setAttribute("style","margin-left:30%");
-    newChild.href = "/home/products/cart";
-    child3.append(newChild);
+    newChild.href = "/products/cart";
+		child3.append(newChild);
 
+		fetch("http://localhost:4000/add")
+			.then((res) => {
+				return res.json();
+			})
+			.then((data) => {
+				let res = true;
+				if (String(data) == String([])) {
+					alert2.style.display = "block";
+					alert2.textContent = "";
+					alert2.append(child1, child2, child3);
+					setTimeout(function () {
+						alert2.style.display = "none";
+					}, 5000);
+				} else {
+					data.forEach((ele) => {
+						if (ele.id == d) {
+							res = false;
+						}
+					});
+					if (res == true) {
+						alert2.style.display = "block";
+						alert2.textContent = "";
+						alert2.append(child1, child2, child3);
+						setTimeout(function () {
+							alert2.style.display = "none";
+						}, 5000);
+					} else {
+						alert1.innerHTML = "";
+						document.getElementById("hh").scrollIntoView();
+						alert1.innerHTML =
+							"Sorry! You can only add the displayed number of items to the cart. Please enter quantity up to 1.";
+					}
+				}
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 
-    fetch("http://localhost:4321/home/add")
-    .then(res =>{
-        return res.json();
-    })
-    .then(data =>{
-        let res=true;
-        if(String(data) == String([])){
-            alert2.style.display="block";
-            alert2.textContent ="";
-            alert2.append(child1,child2,child3);
-            setTimeout(function(){
-                alert2.style.display = "none";
-            },5000);
-        }
-        else{
-            data.forEach((ele)=>{
-                if(ele.id == d){
-                    res = false;
-                }
-            })
-            if(res == true){
-                alert2.style.display="block";
-                alert2.textContent ="";
-                alert2.append(child1,child2,child3);
-                setTimeout(function(){
-                    alert2.style.display = "none";
-                },5000);
-            }
-            else{
-                alert1.innerHTML="";
-                document.getElementById("hh").scrollIntoView();
-                alert1.innerHTML= "Sorry! You can only add the displayed number of items to the cart. Please enter quantity up to 1.";
-            }
-        }
-    })
-    .catch(err =>{
-        console.log(err);
-    })
-    
-
-    fetch("http://localhost:4321/home/add",{
-        method: "POST",
-        body: JSON.stringify({
-               id : d,
-               name : n,
-               image : i,
-               price: mainCost
-        }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(res => {
-        console.log(res);
-    }).catch(err => {
-        console.log(err);
-    })
+		fetch("http://localhost:4000/add", {
+			method: "POST",
+			body: JSON.stringify({
+				id: d,
+				name: n,
+				image: i,
+				price: mainCost,
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
+			.then((res) => {
+				console.log(res);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
     
 }
 

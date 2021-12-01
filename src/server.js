@@ -16,7 +16,7 @@ app.use("/static", express.static(path.join(__dirname, "style")));
 app.use("/static", express.static(path.join(__dirname, "Script")));
 
 const homeController = require("./controllers/home.controller");
-app.use("/home", homeController);
+app.use("/", homeController);
 
 app.listen(port, async () => {
 	await connect();
