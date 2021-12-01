@@ -16,9 +16,9 @@ app.use("/static", express.static(path.join(__dirname, "style")));
 app.use("/static", express.static(path.join(__dirname, "Script")));
 
 const homeController = require("./controllers/home.controller");
-app.use(port, homeController);
+app.use("/home", homeController);
 
-app.listen('4321', async () => {
+app.listen(port, async () => {
 	await connect();
-	console.log('listening to port 4321');
+	console.log("listening to port 4321");
 });
